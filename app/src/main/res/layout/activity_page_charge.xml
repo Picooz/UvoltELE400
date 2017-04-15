@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_page_charge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.uvoltappoasis.uvoltappoasis.Page_charge">
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/barre_de_charge"
+        android:max="100"
+        android:progress="50"/>
+    <TextView
+        android:id="@+id/textview_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_centerInParent="true"
+        />
+
+    <EditText
+        android:layout_width="165dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edittext_level"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="50dp"
+        android:hint="Entrée le niveau"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignBottom="@+id/edittext_level"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/edittext_scale"
+        android:hint="Entrée le maximum"
+        android:textAlignment="center"/>
+
+    <Button
+        android:text="Changer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_level"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bouton_envoi" />
+</RelativeLayout>
